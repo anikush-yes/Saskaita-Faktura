@@ -1,0 +1,143 @@
+/* Bendras kūno stilius */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Pagrindinis sąskaitos konteineris */
+.invoice {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Antraštės stilius */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    font-size: 18px;
+}
+
+/* Header skyrius */
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.header div {
+    width: 45%;
+}
+
+/* Teksčio stilius */
+p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Lentelė */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+/* Lentelės antraštės stilius */
+th {
+    background-color: #f0f0f0;
+    padding: 8px;
+    text-align: left;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Lentelės langelių stilius */
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+/* Footer stilius */
+.footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+/* Tarpinės sumos eilutės stilius */
+.totals {
+    background-color: #f9f9f9;
+}
+
+/* Išskirtinis stilius transportavimo kainai */
+tfoot tr:last-child {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+/* Lanksti lentelė mobiliesiems įrenginiams */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .header div {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    td, th {
+        padding: 6px;
+    }
+}
+
+/* Dinamiškai sugeneruoto turinio stilius */
+#seller, #buyer {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+#seller h2, #buyer h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* Kiekvienos eilutės (prekių) stilius */
+table tr {
+    border-bottom: 1px solid #eee;
+}
+
+/* Specialus stilius pirmam stulpeliui lentelėje */
+th, td:first-child {
+    font-weight: bold;
+}
+
+/* Specialūs stiliai, jei nėra duomenų arba klaidų */
+.error {
+    color: red;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}

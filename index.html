@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Sąskaita faktūra</title>
+</head>
+<body>
+    <div class="invoice">
+        <h1>PVM SĄSKAITA FAKTŪRA</h1>
+        <div class="header">
+            <div id="seller">
+                <h2>Pardavėjas</h2>
+                <p></p> <!-- Dynamically filled -->
+            </div>
+            <div id="buyer">
+                <h2>Pirkėjas</h2>
+                <p></p> <!-- Dynamically filled -->
+            </div>
+        </div>
+        <p><strong>Sąskaitos numeris:</strong> <span id="invoiceNumber"></span></p>
+        <p><strong>Sąskaitos data:</strong> <span id="invoiceDate"></span></p>
+        <p><strong>Apmokėti iki:</strong> <span id="dueDate"></span></p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Prekė</th>
+                    <th>Kiekis</th>
+                    <th>Kaina</th>
+                    <th>Nuolaida</th>
+                    <th>Galutinė kaina</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Čia bus įterpti duomenys -->
+            </tbody>
+            <tfoot>
+               
+                <tr class="totals">
+                    <td>Tarpinė suma:</td>
+                    <td></td>
+                </tr>
+                <tr class="totals">
+                    <td>Transportavimo kaina:</td>
+                    <td></td>
+                </tr>
+                <tr class="totals">
+                    <td>PVM (21%):</td>
+                    <td></td>
+                </tr>
+                <tr class="totals">
+                    <td>Galutinė suma su PVM:</td>
+                    <td></td>
+                </tr>
+            </tfoot>
+        </table>
+        <div class="footer">
+            <p>Ačiū už pirkimą!</p>
+        </div>
+    </div>
+</body>
+</html>
